@@ -1,0 +1,743 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 5rem;
+}
+
+body {
+
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: gray;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-opaque {
+  background-color: rgba(96, 89, 89, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.left {
+  display: flex;
+  gap: 150px;
+  margin: 22px 30px;
+}
+
+.logo-movies {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-movies b {
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+}
+
+.searchbox {
+  position: relative;
+  /* display: inline-block;  */
+}
+
+.searchbox input {
+  padding: 10px 60px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+
+}
+
+input[type="search"]::placeholder {
+
+  color: #585454;
+  font-style: italic;
+
+}
+
+.searchbox img {
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  gap: 60px;
+
+}
+
+.right ul {
+  display: flex;
+  gap: 40px;
+}
+
+.right ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 25px 0px;
+}
+
+.right li a {
+  text-decoration: none;
+}
+
+.right ul li a:hover {
+  background-color: rgb(220, 185, 185);
+  padding: 15px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 08px;
+
+}
+
+.Sign-button {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 08px;
+
+}
+
+.login-button:hover,
+.Sign-button:hover {
+  background-color: #e72e2e;
+  transform: scale(1.1);
+
+}
+
+/* Home */
+.swiper-slide {
+  background-color: green;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background: rgb(2, 3, 7, 0.4);
+
+}
+
+.slide-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.img-text {
+  position: absolute;
+  right: 70px;
+  top: 400px;
+}
+
+.img-text span {
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.img-text h1 {
+  margin-top: 20px;
+  font-weight: 400;
+  color: white;
+  font-size: 4rem;
+}
+
+.img-text .btn {
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  padding: 10px 40px;
+}
+
+.img-text .btn:hover {
+  background-color: #7a6666;
+}
+
+.swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 0.2rem !important;
+  background-color: gray !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem !important;
+  background-color: red !important;
+}
+
+/* Hollywood and Bollywood Coming Soon And Anime */
+.heading {
+  margin-top: 60px;
+  /* Remove extra space here */
+  padding: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-bottom: 3px solid red;
+}
+
+
+
+.green {
+  border-bottom: 3px solid green;
+}
+
+.movies-container {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.movies-container>.box {
+  margin: 20px 0;
+}
+
+.box .box-img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  background-color: rgb(220, 25, 25);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  right: 52px;
+  bottom: 50px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.5s ease;
+}
+
+.box .box-img img:hover {
+  transform: translateY(-10px);
+  transition: 0.1s all linear;
+}
+
+.box h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.box span {
+  font-size: 13px;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.box-img:hover .btn {
+  opacity: 1;
+}
+
+.coming-container {
+  display: grid;
+  gap: 1rem;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.coming-container .box-img img:hover {
+  transform: translateY(-10px);
+  transition: 0.1s all linear;
+}
+
+
+/* Anime */
+.anime-container {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box video {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .box-img video:hover {
+  transform: translateY(-10px);
+  transition: 0.1s all linear;
+}
+
+
+/* Sign up from */
+#signupModal {
+  display: none;
+
+  position: fixed;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(43, 35, 35, 0.7);
+  backdrop-filter: blur(5px);
+  
+
+}
+.signform{
+  height: 100%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#closeModal {
+  position: absolute;
+  top: 130px;
+  right: 33%;
+  background-color: transparent;
+  border: none;
+  color: #131111;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 3px 20px;
+  border-radius: 10px;
+}
+
+#closeModal:hover {
+  color: white; /* Change color on hover */
+  background-color: red;
+
+}
+
+#signupModal form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: -24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signupModal form h1 {
+  color: rgb(0, 140, 255);
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#signupModal form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 3px solid #2f42a3;
+  color: black;
+
+  box-sizing: border-box;
+}
+
+#signupModal form input[type="submit"] {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#signupModal form input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+/* Login form */
+
+.Loginform {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px
+}
+
+.head {
+  font-size: 25px;
+  margin: 30px 0px;
+}
+
+.username {
+  position: relative;
+}
+
+.username input {
+  padding: 10px 90px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 0, 0.405);
+}
+
+.img1 {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.password {
+  position: relative;
+}
+
+.password input {
+  padding: 10px 90px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 0, 0.405);
+}
+
+
+.img2 {
+  position: absolute;
+  right: 8px;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.password .submit {
+  padding: 10px 168px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  background-color: #1066d7;
+}
+
+.issue {
+  display: flex;
+  justify-content: space-around;
+}
+
+.issue p {
+  margin-left: -20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.issue a {
+  margin-left: -2 0px;
+  font-size: 15px;
+  color: blue;
+  text-decoration: none;
+}
+
+
+
+/* pop window */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50 px);
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #2c2828;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  max-width: 600px;
+  top: -100px;
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+  transform: scale(0.8);
+
+}
+
+.close {
+  color: #aaa;
+  top: -1px;
+  right: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.pop-img {
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+}
+
+#movie-details {
+  width: 300px;
+  height: 20px;
+}
+
+.pay {
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+.pay input[type="number"] {
+  width: 60px;
+  margin: 0px 0px;
+  padding: 5px 60px;
+  border-radius: 10px;
+  ;
+  border: none;
+  color: black;
+  background-color: gray;
+}
+
+.pay p {
+  margin: 30px 114px 30px 30px;
+
+}
+
+.pay #total-price {
+  font-weight: bold;
+  color: #4CAF50;
+  margin-left: 40px;
+}
+
+.pay-button {
+  padding: 15px 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* Payment Pop Up */
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5d5252;
+  padding: 20px;
+  z-index: 9999;
+  border: 2px blue;
+  border-radius: 20px;
+}
+
+.payment-form {
+  width: auto ;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 30px;
+}
+.payment-form label{
+color: black;
+font-weight: 600;
+font-size: larger;
+}
+.payment-form input{
+color: rgb(58, 58, 70);
+border-radius: 5px;
+margin: 5px 0px;
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+
+}
+
+.payment-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.payment-form button{
+background-color: rgb(56, 56, 154);
+padding: 10px 30px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+
+.payment-form button:hover{
+background-color: rgb(171, 33, 33);
+}
+.button-close{
+position: absolute;
+top: -12px;
+right: -14px;
+cursor: pointer;
+}
+
+
+
+/* footer */
+
+footer {
+  height: 30rem;
+  background-color: rgba(128, 128, 128, 0.759);
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.left1,
+.middle,
+.right1 {
+
+  width: 344px;
+  height: 400px;
+  padding: 20px 30px;
+  margin: 0px 30px;
+}
+
+.about p {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.about ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.middle ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.middle ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.right1 {
+  width: 400px;
+}
+
+.contact p {
+  font-size: 20px;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(122, 114, 114);
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

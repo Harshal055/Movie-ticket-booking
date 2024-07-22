@@ -1,0 +1,865 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Kaisei+Opti&family=Poppins:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="left">
+                <div class="logo-movies">
+                    <img src="image'/img/movie-solid-24_46_11zon.png" alt="logo">
+                    <b><i>AHMovies</i></b>
+                </div>
+
+
+                <div class="searchbox">
+                    <input class="nosubmit" type="search" placeholder="Search for movies">
+                    <img src="image'/img/search-regular-24 (1).png" alt="search">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home </a></li>
+                    <li><a href="#Bollywood">Bollywood</a></li>
+                    <li><a href="#Hollywood">Hollywood</a></li>
+                    <li><a href="#Coming Soon">Coming Soon</a></li>
+                    <li><a href="#Anime">Anime</a></li>
+                    <li><a href="#Contact">Contact us </a></li>
+                </ul>
+
+
+                <div class="button-container">
+                    <a href="#Login"><button class="login-button">Login</button></a>
+                    <button class="Sign-button" onclick="toggleSignUpForm()">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="image'/img/home1.jpg" alt="">
+                        </div>
+                        <div class="img-text">
+                            <span>Marvel Universe</span>
+                            <h1>Venom: Let There <br>Be Carnage</h1>
+                            <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-img ">
+                            <img src="image'/img/captainAmerica.webp" alt="">
+                        </div>
+                        <div class="img-text">
+                            <span>Marvel Universe</span>
+                            <h1>A Captain America: <br>The First Avenger</h1>
+                            <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="image'/img/home3.jpg" alt="">
+                        </div>
+                        <div class="img-text">
+                            <span>Marvel Universe</span>
+                            <h1>Spider-Man: No <br> way Home</h1>
+                            <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Bollywood -->
+        <section class="Bollywood" name="Bollywood" id="Bollywood">
+
+            <h2 class="heading green">Bollywood</h2>
+            <div class="movies-container">
+                <!-- box 1 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b1_5_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Mission Raninganj</h3>
+                    <span>145 min | Biography</span>
+                    <p id="movie-price">431&nbsp;&nbsp;RS</p>
+
+
+                </div>
+
+                <!-- box 2 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b2_6_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Tanhaji: The Unsung warrior</h3>
+                    <span>120 min | Biography</span>
+                    <p id="movie-price">231&nbsp;&nbsp;RS</p>
+                </div>
+
+                <!-- box 3 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b3_7_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Jawan</h3>
+                    <span>165 min | Action</span>
+                    <p id="movie-price">423&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 4 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b5_9_11zon.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Pathaan</h3>
+                    <span>146 min | Thriller</span>
+                    <p id="movie-price">345&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 5 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b6_10_11zon.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>The Kerala Story</h3>
+                    <span>138 min | Drama</span>
+                    <p id="movie-price">342&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 6 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b7_11_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Gadar</h3>
+                    <span>170 min | Adventure</span>
+                    <p id="movie-price">352&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 7 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b8_12_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Baahubali</h3>
+                    <span>167 min | Adventure</span>
+                    <p id="movie-price">235&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 8 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/b4_8_11zon.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>3 Idiots</h3>
+                    <span>170 min | Comedy</span>
+                    <p id="movie-price">234&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 9 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/RRR_Poster.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>RRR</h3>
+                    <span>187 min | Adventure</span>
+                    <p id="movie-price">123&nbsp;&nbsp;RS</p>
+                </div>
+
+                <!-- Box 10 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/fighter.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Fighteer</h3>
+                    <span>146 min | Action</span>
+                    <p id="movie-price">232&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box 11 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/download.jpeg.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Pushpa </h3>
+                    <span>179 min | Action</span>
+                    <p id="movie-price">322&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- box 12 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/kgf2.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>KGF 2</h3>
+                    <span>146 min | Crime</span>
+                    <p id="movie-price">323&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box 13 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/lalsing.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Laal Singh Chaddha</h3>
+                    <span>159 min | Drama</span>
+                    <p id="movie-price">243&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box 14 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/bramhastra.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Brahmastra Part One: Shiva</h3>
+                    <span>167 min | Action</span>
+                    <p id="movie-price">123&nbsp;&nbsp;RS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hollywood -->
+        <section class="Hollywood" name="Hollywood" id="Hollywood">
+
+            <h2 class="heading">Hollywood</h2>
+            <div class="movies-container">
+                <!-- box 1 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m1_36_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+                    </div>
+                    <h3>Venom</h3>
+                    <span>120 min | Action</span>
+                    <p id="movie-price">321&nbsp;&nbsp;RS</p>
+
+                </div>
+
+                <!-- box 2 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m2_37_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+                    </div>
+                    <h3>Dunkric</h3>
+                    <span>120 min | Adventure</span>
+                    <p id="movie-price">213&nbsp;&nbsp;RS</p>
+
+                </div>
+
+                <!-- box 3 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m3_38_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Batman v Sumerman</h3>
+                    <span>150 min | sci-fi</span>
+                    <p id="movie-price">321&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 4 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m4_39_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>John Wick 2</h3>
+                    <span>122 min | Crime</span>
+                    <p id="movie-price">342&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 5 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m5_40_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Aquaman:Home is calling</h3>
+                    <span>143 min | Fantasy</span>
+                    <p id="movie-price">324&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 6 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m6_41_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Black Panther</h3>
+                    <span>154 min | Sci-fi</span>
+                    <p id="movie-price">123&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 7 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m7_42_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Thor</h3>
+                    <span>115 min | Fantasy</span>
+                    <p id="movie-price">231&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 8 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m8_43_11zon.png" alt="">
+                        <button class="btn" onclick="bookTicket(this)" Book Now</button>
+
+                    </div>
+                    <h3>Bunblebee</h3>
+                    <span>114 min | Adventure</span>
+                    <p id="movie-price">423&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box 9 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/m9_44_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Mortal Engines</h3>
+                    <span>128 min | Fantasy</span>
+                    <p id="movie-price">121&nbsp;&nbsp;RS</p>
+
+                </div>
+
+                <!-- Box10 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/m10_45_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Underworls Blood War</h3>
+                    <span>151 min | Horror</span>
+                    <p id="movie-price">232&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- Box11 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/avatar_3_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Avatar</h3>
+                    <span>192 min | Adventure</span>
+                    <p id="movie-price">100&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- box12 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/inception_34_11zon.jpeg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Inception</h3>
+                    <span>148 min | Sci-fi</span>
+                    <p id="movie-price">123&nbsp;&nbsp;RS</p>
+
+                </div>
+
+                <!-- box13 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/aladin_1_11zon.jpeg    " alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Aladin</h3>
+                    <span>128 min | Comedy</span>
+                    <p id="movie-price">131&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- Box14 -->
+                <div class=" box">
+                    <div class="box-img">
+                        <img src="image'/img/Avengers_4_11zon.jpg" alt="">
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+                    </div>
+                    <h3>Avenger:Age of Altron</h3>
+                    <span>120 min | Action</span>
+                    <p id="movie-price">143&nbsp;&nbsp;RS</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Comming Soon -->
+        <section class="Coming Soon" id="Coming Soon">
+            <h2 class="heading orange">Coming Soon</h2>
+
+            <div class="coming-container swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Box 1 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming1.jpg" alt="" class="coming">
+
+                        </div>
+                        <h3>Johnny English</h3>
+                        <span>87 min | Adventure</span>
+
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img comming">
+                            <img src="image'/img/coming2.jpg" alt="">
+
+                        </div>
+                        <h3>Warcraft</h3>
+                        <span>123 min | Fantasy</span>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming3.jpg" alt="">
+
+                        </div>
+                        <h3>Rampage</h3>
+                        <span>107 min | Sci-fi</span>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming4.jpg" alt="">
+
+
+                        </div>
+                        <h3>The Iron Lady</h3>
+                        <span>105 min | Biography</span>
+                    </div>
+
+                    <!-- Box 5 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming5.jpg" alt="">
+
+
+                        </div>
+                        <h3>Justice League</h3>
+                        <span>120 min | Fantasy</span>
+                    </div>
+
+                    <!-- Box 6 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming6.jpeg" alt="">
+
+                        </div>
+                        <h3>Doctor Strange</h3>
+                        <span>115 min | Fantasy</span>
+                    </div>
+
+                    <!-- Box 7 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming7.jpg" alt="">
+
+
+                        </div>
+                        <h3>Captain Marvel</h3>
+                        <span>123 min | Sci-fi</span>
+                    </div>
+
+                    <!-- Box 8 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming8.jpg" alt="">
+
+
+                        </div>
+                        <h3>Black X Widow</h3>
+                        <span>134 min | Sci-fi</span>
+                    </div>
+
+                    <!-- Box 9 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming9.jpg" alt="">
+
+
+                        </div>
+                        <h3>Antman</h3>
+                        <span>117 min | Sci-fi</span>
+                    </div>
+
+                    <!-- Box 10 -->
+                    <div class="swiper-slide box">
+                        <div class="box-img">
+                            <img src="image'/img/coming10.jpg" alt="">
+
+                        </div>
+                        <h3>Guardian of the Galaxy</h3>
+                        <span>121 min | Comedy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anime -->
+        <section class="Anime " id="Anime">
+            <h2 class="heading orange">Anime</h2>
+
+            <div class="anime-container">
+                <!-- Box1 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anime5_6_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/Naruto _pain arc_ - almighty push _ [Edit_AMV]! - Copy.mp4" loop autoplay
+                            muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Naruto:The Last Movie</h3>
+                    <span>130 min | Action</span>
+                    <p id="movie-price">100&nbsp;&nbsp;RS</p>
+                </div>
+
+                <!-- Box2 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anim4_2_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/Luffy _Badass_ - Overtaken [AMV_EDIT]!.mp4" loop autoplay muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>One Piece:The Red</h3>
+                    <span>168 min | Fantasy</span>
+                    <p id="movie-price">245&nbsp;&nbsp;RS</p>
+                </div>
+
+                <!-- Box3 -->
+                <div class="box">
+                    <div class="box-img"><img src="image'/img/anime11_10_11zon.jpg" alt="Movie Poster"
+                            style="display: none;">
+                        <video src="/video/This Is 4K Naruto (Aesthetic Edit) _ Runaway Edit (1).mp4" loop autoplay
+                            muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Naruto:Road To Ninja</h3>
+                    <span>135 min | Action</span>
+                    <p id="movie-price">154&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box4 -->
+                <div class="box">
+                    <div class="box-img"><img src="image'/img/anime3_5_11zon.jpg" alt="Movie Poster"
+                            style="display: none;">
+                        <video src="/video/Bleach (TYBW) 🌙- Middle of the Night [ AMV_EDIT] ! (1).mp4" autoplay loop
+                            muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Bleach:The diamond dust rebellion</h3>
+                    <span>165 min | Action</span>
+                    <p id="movie-price">230&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box5 -->
+                <div class="box">
+                    <div class="box-img"><img src="image'/img/anime9_9_11zon.jpg" alt="Movie Poster"
+                            style="display: none;">
+                        <video src="/video/Enemy - Attack On Titan Edit _ AMV (1).mp4" autoplay loop muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Attackk on Titan</h3>
+                    <span>156 min | Horror</span>
+                    <p id="movie-price">210&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box6 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anime7_7_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <Video src="/video/Demon Slayer 4K _ Uzui Tengen and Tanjiro Kamado VS Gyutaro (1).mp4" LOOP
+                            autoplay muted></Video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Demon Slayer:To the Hashira Training</h3>
+                    <span>145 min | Action</span>
+                    <p id="movie-price">234&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box7 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anime1_3_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/My Ordinary Life - Death Note [Edit_AMV] (1).mp4" muted autoplay
+                            loop></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Death Note</h3>
+                    <span>450 min | Crimes</span>
+                    <p id="movie-price">260&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box8 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anime8_8_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/THIS IS 4K ANIME (Solo Leveling).mp4" loop autoplay muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Solo Leveling</h3>
+                    <span>450 min | Action</span>
+                    <p id="movie-price">550&nbsp;&nbsp;RS</p>
+
+                </div>
+                <!-- Box9 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/amime6_1_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/videoplayback (1).mp4" loop autoplay muted></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Jujutsu Kaisen 0</h3>
+                    <span>125 min | Fantasy</span>
+                    <p id="movie-price">125&nbsp;&nbsp;RS</p>
+                </div>
+                <!-- Box10 -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="image'/img/anime2_4_11zon.jpg" alt="Movie Poster" style="display: none;">
+                        <video src="/video/Suzume  [4K] 『AMV_Edit』_ Suzume no Tojimari Title Track.mp4" muted autoplay
+                            loop></video>
+                        <button class="btn" onclick="bookTicket(this)">Book Now</button>
+
+                    </div>
+                    <h3>Suzume</h3>
+                    <span>152 min | Action</span>
+                    <p id="movie-price">120&nbsp;&nbsp;RS</p>
+                </div>
+        </section>
+
+        <section id="signupModal">
+            <div class="signform">
+                <button id="closeModal">Close</button>
+                <form id="signupForm">
+                    <h1>Sign Up and Start Booking!</h1>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter fullname" required>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                    <input type="number" id="age" name="age" placeholder="Enter age" required>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="91+ 999999999" required>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept all terms and conditions</label>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                    <a href="#Login" id="closeAndLogin">Login</a>
+                </form>
+            </div>
+        </section>
+
+        <!-- LoginForm -->
+        <section class="Loginform" id="Login">
+            <div class="form">
+                <p class="head">Login into your account!</p>
+                <div class="username">
+                    <input type="text" id="email1" placeholder="Username" required>
+                    <img src="image'/img/user.png" alt="img" class="img1">
+                </div>
+                <div class="password">
+                    <input type="password" id="password1" placeholder="Password" required>
+                    <img src="image'/img/eye.png" class="toggle-password img2" onclick="togglePasswordVisibility()"
+                        alt="img"><br>
+                    <button type="submit" class="submit" onclick="validateLogin()">Login</button>
+
+                </div>
+
+                <div class="issue">
+                    <p>Forgot Password</p>
+                    <a href="#" onclick="openSignUpModal()">Sign in</a>
+
+                    <p>Forgot username</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <section class="pop-window">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-content">
+                        <div class="pop-img">
+                            <img id="modal-image" src="" alt="">
+                            <div id="movie-details">
+                                <h3 id="movie-name"></h3>
+                                <p id="movie-price"></p>
+                            </div>
+                        </div>
+                        <div class="pay">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <p>Total Price: <span id="total-price"></span>&nbsp;&nbsp;Rs</p>
+                            <button class="pay-button" id="pay-button">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Popup -->
+        <div class="popup" id="payment-popup">
+            <div class="payment-form">
+                <button  class="button-close" onclick="closePopupWindow()">Close</button>
+                <h2 style="margin-top:30px ;">Card Details</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Name on Card</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" pattern="\d*" maxlength="16" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" pattern="(0[1-9]|1[0-2])\/\d{2}" maxlength="5"
+                            placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" pattern="\d*" maxlength="3" required>
+                    </div>  
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" readonly>
+                    </div>
+                    <button type="submit" style="margin-top: 20px;" onclick="bookedDone()">Pay</button>
+                </form>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="left1">
+                <div class="about">
+                    <h1>About us</h1>
+                    <p> we're dedicated to simplifying your movie-going experience. With just a few clicks, you can
+                        browse the latest releases, check showtimes, and secure your seats hassle-free.</p>
+                    <ul>
+                        <li><a href=""></a>
+                            <img src="image'/img/icons8-facebook-48.png" alt="">
+                        </li>
+                        <li><a href=""></a>
+                            <img src="image'/img/icons8-twitter-48.png" alt="">
+                        </li>
+                        <li><a href=""></a>
+                            <img src="image'/img/icons8-youtube-48.png" alt="">
+                        </li>
+                        <li><a href=""></a>
+                            <img src="image'/img/icons8-instagram-48.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="middle">
+                <div class="support">
+                    <h1>support</h1>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right1">
+                <div class="contact" id="Contact">
+                    <h1>Contact</h1>
+                    <img src="image'/img/icons8-phone-48.png" alt="" class="phone">
+                    <P>91+9284406178</P>
+                    <img src="image'/img/icons8-mail-48.png" alt="" class="mail">
+                    <P>abhibhosale611@gmail.com</P>
+                    <p>harshalpardhi53@gmail.com</p>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                Copyright 2023 &copy; | All Right reserved
+            </div>
+        </footer>
+
+    </main>
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section class="Loginform">
+        <form id="loginForm" action="./xyz" method="post"> 
+            <div class="form">
+                <p class="head">Login into your account!</p>
+                <div class="username">
+                    <input type="text" id="email1" name="email" placeholder="Username" required>
+
+                    <img src="image'/img/user.png   " alt="img" class="img1">
+                </div>
+                <div class="password">
+                    <input type="password" id="password1" name="password" placeholder="Password" required>
+      
+                    <img src="image'/img/eye.png" class="toggle-password img2" onclick="togglePasswordVisibility()" alt="img"><br>
+                    <button type="submit" class="submit">Login</button>
+                </div>
+                <div class="issue">
+                    <a href="#" onclick="openSignUpModal()">Sign in</a>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <section id="signupModal">
+        <div class="signform">
+            <button id="closeModal">Close</button>
+            <form id="signupForm">
+                <h1>Sign Up and Start Booking!</h1>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter fullname" required>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+                <input type="number" id="age" name="age" placeholder="Enter age" required>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="91+ 999999999" required>
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept all terms and conditions</label>
+                </div>
+                <input type="submit" value="Sign Up">
+                <a href="#Login" id="closeAndLogin">Login</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
