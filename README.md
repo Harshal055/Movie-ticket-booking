@@ -12,15 +12,8 @@ Browse Movies: Users can view a list of currently playing and upcoming movies.
 Movie Details: Each movie listing includes details like the synopsis, cast, ratings, and showtimes.
 Seat Selection: Users can select available seats for a preferred showtime.
 Booking Confirmation: After selecting seats and entering details, users receive a booking confirmation with ticket information.
-Responsive Design: The website is designed to work on both desktop and mobile devices, ensuring accessibility and usability.
-User Authentication: Secure login for returning users, with an option to register a new account.
-Technology Stack
-Frontend: React.js
-Backend: Node.js with Express
-Database: MongoDB for managing movie listings, bookings, and user data
-Deployment: Vercel
-Installation Instructions
-To run this project locally, follow these steps:
+Responsive Design
+
 
 Clone the repository:
 
