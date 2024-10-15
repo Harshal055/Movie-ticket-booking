@@ -1,6 +1,8 @@
 ﻿# Movie-ticket-booking
 Movie Ticket Booking Website
-URL: movie-ticket-booking-psi.vercel.app
+
+
+URL: [movie-ticket-booking-psi.vercel.app](https://movie-ticket-booking-psi.vercel.app/)
 
 Overview
 This project is a fully functional web application for booking movie tickets. It allows users to browse movies, check available shows, select seats, and purchase tickets conveniently online. Built with a focus on user experience, the app provides a seamless and intuitive booking process.
